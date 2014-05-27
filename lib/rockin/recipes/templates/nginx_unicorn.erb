@@ -15,6 +15,7 @@ server {
   root <%= current_path %>/public;
 
   sendfile on;
+  underscores_in_headers on;
 
   location ^~ /assets/ {
     gzip_static on;
